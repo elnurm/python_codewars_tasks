@@ -42,7 +42,9 @@ def solution(n):
     result = ""
     for roman, value in rom_nums:
         c = n // value
-        data -= c * value
+        n -= c * value
         result += roman * c
 
     return result
+
+print solution(3)
